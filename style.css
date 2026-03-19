@@ -1,0 +1,433 @@
+/* common code starts here */
+
+:root{
+    --primary-color:#4A2E1E;
+    --secondary-color:#D0A373;
+    --padding:1rem;
+    --transition:all 0.9s;
+    --border-radius:0.6rem;
+    --box-shadow:0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.272);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.btn-icon{
+    border-radius: 50%;
+    color: white;
+    background-color: #D0A373;
+    padding: 0.5rem;
+    margin: 0.6rem;
+}
+
+.btn-icon:hover{
+    background-color: #4A2E1E;
+    color: white;
+}
+
+.btn-style{
+    text-transform: uppercase;
+    border-radius: 5rem;
+    color: #2D1910;
+    background-color: #D0A373;
+    padding: 1rem 2rem;
+    transition: var(--transition);
+}
+
+.btn-style:hover{
+    background-color: #D0A373;
+    transform: scale(0.9);
+}
+
+
+/* common code ends here */
+
+
+/* navbar starts here */
+
+nav{
+    background-color: #2d1910;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    color: #D0A373;
+    font-size: 2.5rem;
+    padding-left: 0.6rem;
+}
+
+.logo-name{
+    color: #D0A373;
+    font-size: 2.4rem;
+    padding: var(--padding);
+    font-weight: 700;
+    font-family: "Handlee", cursive;
+}
+
+.nav-menubar{
+    color: #D0A373;
+}
+
+.nav-menubar:hover{
+    transform: scale(1.1);
+}
+
+.nav-content{
+    padding: 1.3rem;
+}
+
+.nav-content li a{
+    font-size: 1.3rem;
+    color: white;
+    transition: var(--transition);
+    font-family: "Handlee", cursive;
+    margin-right: 1rem;
+}
+
+.nav-content li a:hover{
+    color: #D0A373;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+/* navbar ends here */
+
+/* banner section starts here */
+
+.banner-section{
+    background-color: var(--primary-color);
+}
+
+.banner-content{
+    padding: var(--padding);
+}
+
+.banner-heading{
+    color: var(--secondary-color);
+    font-size: 4rem;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+.sub-heading{
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.banner-content p{
+    color: rgb(201, 196, 196);
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+/* banner section ends here */
+
+/* about section starts here */
+
+#about{
+    background-color: #F6F6F6;
+}
+
+.about-heading{
+    color: var(--primary-color);
+    font-size: 4rem;
+    padding: 1rem;
+    margin: 4rem 0;
+}
+
+.about-img{
+    height: 500px;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    border: 3px solid #D0A373;
+    box-shadow: var(--box-shadow);
+    object-fit: cover;
+}
+
+.about-img:hover{
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 1);
+}
+
+/* about section ends here */
+
+
+/* menu section starts here */
+
+#menu{
+    background-color: var(--primary-color);
+}
+
+.menu-heading{
+    color: white;
+    text-align: center;
+    padding-top: 10rem;
+    font-size: 3rem;
+}
+
+.card-style{
+    background-color: #5F4839;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.card-style:hover{
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 1);
+}
+
+.menu-name{
+    color: #D0A373;
+    margin: 1rem 0;
+}
+
+.menu-img{
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+/* menu section ends here */
+
+/* testimonial section starts here */
+
+#testimonial{
+    background-color: #5F4839;
+}
+
+.testimonial-heading{
+    color: white;
+    text-align: center;
+    padding-top: 10rem;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    font-family: "Handlee", cursive;
+}
+
+.testimonial-card {
+  max-width: 500px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  margin: 5rem 0;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #c49b63; /* coffee color border */
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60% 60%;
+  color: #D0A373;
+}
+
+/* testimonial section ends here */
+
+/* gallery section starts here */
+
+#gallery{
+    background-color: #F5F5F5;
+}
+
+.gallery-heading{
+    color: #4A2E1E;
+    text-align: center;
+    padding-top: 10rem;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    font-family: "Handlee", cursive;
+}
+
+.gallery-img{
+    height: 300px;
+    object-fit: cover;
+}
+
+/* gallery section ends here */
+
+
+/* contact section starts here */
+
+.contact-heading{
+    color: #c49b63;
+    text-align: center;
+    padding-top: 10rem;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    font-family: "Handlee", cursive;
+}
+
+#contact{
+    background-color: #4A2E1E;
+}
+
+.contact-item{
+    align-items: center;
+    padding: 2rem;
+}
+
+.contact-item i{
+    color: #D0A373;
+    margin-right: 1rem;
+}
+
+.contact-item span{
+    padding-top: 1rem;
+}
+
+.contact-item h5{
+    color: #c49b63;
+}
+
+.contact-item p{
+    color: white;
+}
+
+.contact-content{
+    background-color: #5F4839;
+    padding: 2rem;
+    border-radius: 0.6rem;
+    height: 500px;
+    margin-top: 5rem;
+}
+
+.contact-content label{
+    color: #c49b63;
+    padding: 0.5rem;
+}
+
+.contact-content input{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.119);
+    border: none;
+    height: 50px;
+    border-radius: 0.6rem;
+}
+
+.contact-content textarea{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.119);
+    border: none;
+    border-radius: 0.6rem;
+    height: 100px;
+    resize: none;
+}
+
+/* contact section ends here */
+
+/* footer starts here */
+
+footer{
+    background-color: #1A1A1A;
+    border-top: 2px solid #c49b63;
+}
+
+.footer-heading{
+    color: #c49b63;
+    padding: 1rem;
+}
+
+.footer-text{
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.2rem 1rem;
+}
+
+.about-coffee-shop-icon{
+    padding: 0.5rem;
+}
+
+.about-coffee-shop-text{
+    text-align: left;
+}
+
+.about-coffee-shop-icon a {
+    color: #c49b63;
+    height: 40px;
+    width: 40px;
+    background-color: #d0a37332;
+    border-radius: 50%;
+    padding: 0.6rem;
+    margin-right: 0.3rem;
+}
+
+.quick-links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.quick-links a{
+    text-decoration: none;
+}
+
+.quick-links a:hover{
+    color: #c49b63;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 0.6rem;
+}
+
+.btn-newsletter{
+    width: 70%;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+hr{
+    color: white;
+}
+
+.footer-brand{
+    color: rgba(255, 255, 255, 0.705);
+    font-size: 0.9rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+/* footer ends here */
+
+
+
+/* responsive section starts here */
+
+
+@media(max-width: 768px){
+    .contact-content{
+        position: relative;
+        left: 60px;
+    }
+
+    .gallery-img{
+        height: 450px;
+    }
+}
+
+
+@media(max-width: 576px){
+    .contact-content{
+        width: 78%;
+    }
+}
